@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@media (min-width: 1024px){
+	
+	.nested_grid {
+		display: grid;
+		grid-gap: 0.5em;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr auto;
+		grid-template-areas: 
+			"main sb"
+			"contact contact";
+	}
+	
+	.main {
+		grid-area: main;
+	}
+	
+	.sidebar {
+		grid-area: sb;
+	}
+	
+	.contact {
+		grid-area: contact;
+	}
+	
+	
+	
+	
+}
