@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@media (min-width: 770px){
+
+	/* 4.1) Art Layout */
+	.art {
+		margin: 5% !important;
+	}
+
+	.author {
+		margin-bottom: 4% !important;
+	}
+
+	/* 4.2) Contact Layout */
+	.contact_title {
+		margin-top: 3% !important;
+		margin-bottom: 3% !important;
+	}
+
+	.contact_grid {
+		margin: 0 15% 4% !important;
+	}
+
+	.grid_line {
+		margin: 12% 5% 5% !important;
+	}
+
+	.submit_button {
+		margin: 5% 25% 5% !important;
+	}
+
+}

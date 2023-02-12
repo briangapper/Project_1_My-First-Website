@@ -1,0 +1,41 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+/* style_section.css & style_elements.css were originally included in this file,
+I have separated it according to the project specifications, even though I don't
+really see the benefits. */
+@import url("style_computer.css");
+@import url("style_section.css");
+@import url("style_elements.css");
+
+/* 0.) HTML ELEMENTS */
+body {
+	background-color: #ececec;
+	font-family: "Calibri";
+}
+
+h2 {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 0;
+	margin-top: 2%;
+}
+
+a {
+	color: #477ce0;
+}
+
+/* 1.) PAGE LAYOUT */
+.container {
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas: 
+		"hd"
+		"navbar"
+		"section"
+		"footer";
+}

@@ -1,0 +1,246 @@
+/* 4.) SECTION LAYOUT */
+.sct {
+	grid-area: section;
+	
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+	grid-template-areas: 
+		"main"
+		"sidebar"
+		"contact";
+}
+
+/* 4.1) Main Layout */
+.main {
+	grid-area: main;
+}
+
+.main_flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog_card_earth,
+.blog_card_water {
+	background-color: #cfcfcfa9;
+	height: 30%;
+	margin-bottom: 15px;
+	display: flex;
+    border: 1px solid black;
+}
+
+.blog_card_fire {
+	background-color: #cfcfcfa9;
+	height: 30%;
+	display: flex;
+    border: 1px solid black;
+}
+
+/* 4.1.1) Blog Card Img Layout */
+.blog_card_img_box {
+	width: 156px;
+    display: flex;
+    flex-flow: column;
+}
+
+.blog_card_img_box > img {
+	height: 100%;
+	width: 156px;
+}
+
+figcaption {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+}
+
+/* 4.1.2) Blog Card Text Layout */
+.blog_card_earth_text,
+.blog_card_water_text,
+.blog_card_fire_text {
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.rubric {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p#earth {
+	margin-bottom: 0;
+	color: rgb(170, 93, 6);
+}
+
+p#water {
+	margin-bottom: 0;
+	color: rgb(46, 48, 192);
+}
+
+p#fire {
+	margin-bottom: 0;
+	color: rgb(201, 37, 31);
+}
+
+.date {
+	font-weight: bold;
+    font-style: italic;
+	color: rgb(160, 160, 159);
+	margin-top: 0;
+}
+
+.reading_link {
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+.all_posts {
+	background-color: #4EA762;
+	text-align: center;
+
+	display: inline-block;
+	margin: 5% 30% 5% 30%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+#all_posts_link {
+	font-size: 125%;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* 4.2) Sidebar Layout */
+.sidebar {
+	grid-area: sidebar;
+}
+
+.sidebar_flex {
+	background-color: rgba(78, 167, 98, .25);
+	display: flex;
+	flex-direction: column;
+}
+
+/* 4.2.1) Subscribe Layout */
+.subscribe_box {
+	background-color: #4EA762;
+	margin: 5% 15% 2% 15%;
+}
+
+.subscribe_title {
+	color: #fff;
+	text-align: center;
+	letter-spacing: 3px;
+	padding-top: 7%;
+}
+
+.subscribe_email {
+	color: #fff;
+	margin: 25% 8% 2% 8%;
+}
+
+.subscribe_line {
+	border: 1px solid white;
+	margin: 10% 8% 10% 8%;
+}
+
+.subscribe_button {
+	background-color: #fff;
+	text-align: center;
+
+	margin: 0 25% 10% 25%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+}
+
+#subscribe_button_text {
+	color: #4EA762;
+	font-size: 125%;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* 4.2.2) Insta Layout */
+.insta_title {
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.insta_imgs {
+	margin: 0 8% 3% 8%;
+	padding: 0;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 175px 175px 175px;
+	grid-gap: 0.5em;
+
+	justify-content: center;
+}
+
+.insta_imgs > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.instagram_icon_div {
+	text-align: center;
+	margin: 0;
+}
+
+.fa-instagram {
+	font-size: 40px;
+}
+
+
+/* 4.3) Contact Layout */
+.contact {
+	background-color: rgba(78, 167, 98, .25);
+	grid-area: contact;
+}
+
+.contact_title {
+	text-align: center;
+	margin-bottom: 8%;
+	margin-top: 6.5%;
+}
+
+.contact_grid {
+	margin: 0 8% 8% 8%;
+	padding: 0;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	justify-content: center;
+}
+
+.contact_grid_field > p {
+	padding-left: 5%;
+}
+
+.grid_line {
+	border: 1px solid black;
+	margin: 20% 5% 5% 5%;
+}
+
+.submit_button {
+	margin: 5% 25% 9% 25%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+
+	background-color: #4EA762;
+	text-align: center;
+}
+
+#submit_button_text {
+	font-size: 125%;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
